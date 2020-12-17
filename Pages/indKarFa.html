@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf8" lang="hu" /><!-- Használt  karakterkészlet -->
+  <meta http-equiv="Content-Language" content="hu" /> <!-- A szöveg nyelve -->
+  <meta http-equiv="pragma" content="no-cache"/><!-- Lapunk nem tárolodik az olvasó gépén, hanem mindig frissen kérődik le -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+ 
+  <link rel="stylesheet" type="text/css" href="/css/main.css"> 
+  <script src="/js/utf8.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+	<script src="/js/FenyoFa1.js"></script>
+	<script src="/js/FenyoFa2.js"></script>
+	<script type="text/javascript">
+		window.addEventListener("load", eventWindowLoaded, false);	
+	    function eventWindowLoaded () {
+		run1();run2();
+		}
+	</script>
+	
+	
+</head>
+
+
+
+
+
+
+<body  id="page-body" class="page-body  body  container-fluid">
+ <script>
+$(function() {
+  var body = $('#page-body'),
+      template = $('.template.shine1'),
+      stars =  500,
+      sparkle = 20;
+  
+    
+  var size = 'large';
+  var createStar = function() {
+    template.clone().removeAttr('id').css({
+      top: (Math.random() * 100) + '%',
+      left: (Math.random() * 100) + '%',
+      webkitAnimationDelay: (Math.random() * sparkle) + 's',
+      mozAnimationDelay: (Math.random() * sparkle) + 's'
+    }).addClass(size).appendTo(body);
+  };
+ 
+  for(var i = 0; i < stars; i++) {
+    if(i % 2 === 0) {
+      size = 'small';
+    } else if(i % 3 === 0) {
+      size = 'medium';
+    } else {
+      size = 'large';
+    }
+    
+    createStar();
+  }
+
+
+}
+);
+</script>
+
+
+<div class="template shine1"></div> 
+<div id="grid"> 
+	<div id="rowA">		
+			<canvas id='betuk' width='1000px' height='60px'  ></canvas>
+	</div>
+ 
+<div id="rowB" > 
+ 
+	<div  id="Fa2" >  
+		<img class="KarFa" src="/css/images/karfa.jpg" width='380px' height='500px' style="border-radius:80%; padding=20">
+		<p style="    font-size: 2rem; color: red; margin-bottom: 0;">Karácsonyi dal </p>
+		<audio controls autoplay>
+			<source src="/css/images/KarDal.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		 </audio>	 
+	</div> 
+   <div  id="Fa1" >  
+		<img class="img-kep1" src="/css/images/RDS10.jpg" width='600px' height='450px' style="border-radius:50%; ">	
+		<img class="img-kep2" src="/css/images/RDS9.jpg" width='200px' height='200px' style="border-radius:50%;">
+		<img class="img-kep2" src="/css/images/RDS11.jpg" width='200px' height='200px' style="border-radius:50%; margin-left: 200px;">		
+		
+	</div> 
+ 
+	<div id = "kep-container"style="border-radius:50%" >
+		<div><img id="kepKozp" src="/css/images/RDS8.jpg"   style="border-radius:50%";></div> 
+		<div><img class="item" src="/css/images/RDS3.jpg"   style="border-radius:50%";></div>
+		<div> <img class="item" src="/css/images/RDS4.jpg"   style="border-radius:50%";></div>
+		<div> <img class="item" src="/css/images/RDS5.jpg"   style="border-radius:50%";></div>
+		<div> <img class="item" src="/css/images/RDS6.jpg"   style="border-radius:50%";></div>
+		<div> <img class="item" src="/css/images/RDS1.jpg"   style="border-radius:50%";></div>
+		<div> <img class="item" src="/css/images/RDS2.jpg"   style="border-radius:50%";></div>
+		<div> <img class="item" src="/css/images/RDS7.jpg"   style="border-radius:50%";></div>
+		
+</div> 
+</div> 
+</body>
+
+
+<footer id="page-footer" class="page-footer footer">
+  <script>
+$(function() {
+  var body = $('#page-footer'),
+      template = $('.template.shine'),
+      stars =  500,
+      sparkle = 20;
+  
+    
+  var size = 'large';
+  var createStar = function() {
+    template.clone().removeAttr('id').css({
+      top: (Math.random() * 100) + '%',
+      left: (Math.random() * 100) + '%',
+      webkitAnimationDelay: (Math.random() * sparkle) + 's',
+      mozAnimationDelay: (Math.random() * sparkle) + 's'
+    }).addClass(size).appendTo(body);
+  };
+ 
+  for(var i = 0; i < stars; i++) {
+    if(i % 2 === 0) {
+      size = 'small';
+    } else if(i % 3 === 0) {
+      size = 'medium';
+    } else {
+      size = 'large';
+    }
+    
+    createStar();
+  }
+});
+</script>
+<div class="template shine"></div> 
+ 
+  <div class="footer-copyright text-center"> 2020 RDS Karácsony</div>  
+ </footer>
+
+
+
+</html>
