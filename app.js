@@ -14,17 +14,16 @@ app.use(express.static(__dirname + '/Script'));
 
 console.log(path.dirname);
 
-app.use(express.static(__dirname + '/Pages'));
+app.use(express.static(path.join(__dirname, '/Pages')));  
 //Store all HTML files in Pages folder.
+
+
 
 router.get('/',function(req,res){
   res.sendFile(path.join(__dirname+'/Pages/indKarFa.html'));
   //__dirname : It will resolve to your project folder.
 });
 
-router.get('/',function(req,res){
-  res.sendFile(path.join(__dirname+'/Pages/about.html'));
-});
 
 
 
