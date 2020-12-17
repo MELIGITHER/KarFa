@@ -56,7 +56,7 @@ html {
 #rowB{
 	display: grid;
 	padding: 110px;
-	background-image: url('/css/images/disz1.png');
+	background-image: url('/css/images/disz.jpg');
 	grid-template-columns: 400px 610px 650px; 
 	grid-gap: 40px;	
 }
