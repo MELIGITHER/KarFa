@@ -58,7 +58,8 @@ html {
 	padding: 110px;
 	background-image: url('/css/images/DISZ.png'); 
    	background-repeat:no-repeat;
-	background-size: 100%;
+	background-size: cover;
+    	z-index: -1;
 	//-webkit-background-size: cover;
 	grid-template-columns: 400px 610px 650px; 
 	grid-gap: 40px;	
