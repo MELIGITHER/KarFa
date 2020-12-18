@@ -9,9 +9,9 @@ function run1() {
 	setInterval(function() {
 		if (i<txt.length){	
 			if (i%2){	
-			context.fillStyle = "white";//"#000000";
+			context.fillStyle = "red";
 		}else{
-			context.fillStyle = "#8b0000";
+			context.fillStyle = "black";
 		}
 			//alert(i);
 		

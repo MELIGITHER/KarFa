@@ -46,8 +46,7 @@ html {
 	display: grid;
         background-color: lime; 
 	height: 100%;
-	width:100%;
-	//grid-template-rows: 63px 840px ;  	
+	width:100%;  	
 }
 
 #rowA {
@@ -58,10 +57,6 @@ html {
 	display: grid;
 	padding: 110px;
 	background-image: url('/css/images/DISZ.png'); 
-   	//background-repeat:no-repeat;
-	//background-size: cover;
-	//background-attachment: fixed;
-	//-webkit-background-size: cover;
 	grid-template-columns: 400px 610px 650px; 
 	grid-gap: 40px;	
 }
