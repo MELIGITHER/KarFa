@@ -57,6 +57,7 @@ html {
 	display: grid;
 	padding: 110px;
 	background-image: url('/css/images/DISZ.jpg'); 
+	background-size: cover;
 	grid-template-columns: 400px 610px 650px; 
 	grid-gap: 40px;	
 }
