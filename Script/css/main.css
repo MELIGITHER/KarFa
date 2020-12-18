@@ -27,8 +27,8 @@ html {
 
 #page-body {
 	display:block;
-	height: 100vh;
-	width:100vw;
+	height: 100%;
+	width:100%;
 	padding: 0; 
 	margin: 0;
 	background-color:lime; 	
@@ -42,12 +42,14 @@ html {
 
 
 /*---------------------*/
-/*#grid { 
+#grid { 
 	display: grid;
         background-color: lime; 
-	grid-template-rows: 63px 740px ;  	
+	height: 100%;
+	width:100%;
+	//grid-template-rows: 63px 840px ;  	
 }
-*/
+
 #rowA {
         background-color: lime; 
 }
@@ -56,9 +58,10 @@ html {
 	display: grid;
 	padding: 110px;
 	background-image: url('/css/images/DISZ.png'); 
-   	background-repeat:no-repeat;
+   	//background-repeat:no-repeat;
 	//background-size: cover;
-	-webkit-background-size: cover;
+	//background-attachment: fixed;
+	//-webkit-background-size: cover;
 	grid-template-columns: 400px 610px 650px; 
 	grid-gap: 40px;	
 }
