@@ -1,70 +1,141 @@
-/*
-  .pelda => class selector
-  #pelda => ID selector 
- - Különbséget teszt a nagy és kisbetű között
- */
-
-@import url('https://fonts.googleapis.com/css?family=Exo 2');
-
-/* $footer-height: 140px; */
-html {
-   	background-color:  lime; 
-	margin: 0;
-	padding-left:20px;
-	padding-right:20px;
-	//overflow: hidden
-}
-
-@font-face {
-  font-family: myFirstFont;    
-  font-color: rgb(128,0,128);
-  font-style: oblique;
-  font-weight: 800;
-  
-  src: url('/css/fonts/exo-2-v7-latin-regular.woff');format('woff');
-
-}
-
-#page-body {
-	display:block;
-	height: 100%;
-	width:100%;
+body {
 	padding: 0; 
 	margin: 0;
-	background-color:lime; 	
+	height: auto;
+  background-color:lime; 
 } 
 
+canvas{
+  background-color:lime;
+}
 #page-footer {
-	display:fixed;
 	background-color:  lime;
-	text-align: center;
+  text-align: center;
+  text-decoration-color: black;
+  height:40px;
 }
-
-
-/*---------------------*/
-#grid { 
-	display: grid;
-        background-color: lime; 
-	height: 100%;
-	width:100%;  	
-}
-
-#rowA {
-        background-color: lime; 
+#main{
+  display: grid;
+	min-width:700px ;
+  background-image: url('/Script/css/images/DISZ.png'); 
+  background-size: cover;
+  z-index: -1; 
+  padding: 150px;
+  width: max-content;
 }
 
 #rowB{
 	display: grid;
-	padding: 110px;
-	background-image: url('/css/images/DISZ.png'); 
-	grid-template-columns: 400px 610px 650px; 
-	grid-gap: 40px;	
+	min-width:700px ;
 }
 
 
 
+.img-kep1
+{
+	display:block;
+	border-radius:50%; 
+	margin:auto;
+	width: 380px;
+	height: 500px;
+}
+
+.img-kep2{
+	display:block;
+	border-radius:50%; 
+	margin:auto;
+	width: 600px;
+	height:450px;
+}
+
+.img-kep3{
+	border-radius:50%; 
+	padding:40px;
+	width: 200px;
+	height:200px;
+}
 
 
+.item{
+	border-radius:50%
+}
+
+
+h1{
+	font-size: 2rem;
+	color: red; 
+	margin-left: 100px; 
+	margin-bottom: 0;
+}
+
+#fa1-audio{
+	margin-left: 100px;
+	margin-bottom: 50px; 
+}
+
+#kep-container {
+	display:block;	
+  width: 600px;
+	height: 600px;
+  animation: akep 15s linear infinite ;
+}
+
+#kepKozp { 
+	width: 200px; 
+	height: 200px; 
+  position: absolute;
+  border-radius: 50%; 
+	left: 200px; 
+	top: 200px; 
+	animation: kkep 15s linear infinite reverse;
+ }
+
+.item {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  position: absolute;
+  background: #f00;
+	animation: akep 15s linear infinite reverse;
+}
+h3{
+	font-size: 20px;
+	color: black;  
+	margin-bottom: 0;
+}
+
+@keyframes akep {
+  100% {
+    transform: rotate(1turn); 
+  }
+}
+@keyframes kkep {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media(min-width: 700px){
+	.grid{
+		grid-template-columns: 400px 650px 690px; 
+    grid-gap: 40px;	
+    margin:0;
+  }
+
+  #main{
+    background-image: url('/Script/css/images/DISZ.png'); 
+    background-size: cover;
+    background-position: center; 
+    z-index: -1; 
+    padding: 50px;
+    width: max-content;
+    
+  }
+	#img-kep33{
+		grid-template-columns: 400px 400px ; 
+		grid-gap: 40px;	
+	}
+}
 /*--------------------Template shine---------------------*/
 
 .shine {
@@ -141,7 +212,7 @@ html {
 }
 
 /*CSS3 keyframes for glittering effect*/
-@-webkit-keyframes glitter {
+@keyframes glitter {
   0% {
     -webkit-transform: scale(0.3) rotate(0deg);
     opacity: 0;
@@ -158,40 +229,4 @@ html {
     -webkit-transform: scale(0.3) rotate(0deg);
     opacity: 0;
   } 
-}
-
-/*-----------------------------*/
-#kep-container {
-  width: 600px;
-  height: 600px;
-  position: relative;
-  animation: akep 15s linear infinite ;
-}
-#kepKozp { 
-	width: 200px; 
-	height: 200px; 
-	position: absolute; 
-	left: 200px; 
-	top: 200px; 
-	animation: kkep 15s linear infinite reverse;
- }
-.item {
-  width: 210px;
-  height: 210px;
-  line-height: 30px;
-  text-align: center;
-  border-radius: 50%;
-  position: absolute;
-  background: #f00;
-  animation: akep 15s linear infinite reverse;
-}
-@-webkit-keyframes akep {
-  100% {
-    -webkit-transform: rotate(1turn); 
-  }
-}
-@-webkit-keyframes kkep {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
 }
