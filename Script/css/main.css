@@ -17,7 +17,7 @@ canvas{
 #main{
   display: grid;
 	min-width:700px ;
-  background-image: url('/Script/css/images/DISZ.png'); 
+  background-image: url('/css/images/DISZ.png'); 
   background-size: cover;
   z-index: -1; 
   padding: 150px;
@@ -123,7 +123,7 @@ h3{
   }
 
   #main{
-    background-image: url('/Script/css/images/DISZ.png'); 
+    background-image: url('/css/images/DISZ.png'); 
     background-size: cover;
     background-position: center; 
     z-index: -1; 
