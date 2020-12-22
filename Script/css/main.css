@@ -8,15 +8,17 @@ body {
 canvas{
   background-color:lime;
 }
+
 #page-footer {
-	background-color:  lime;
+  background-color:  lime;
   text-align: center;
   text-decoration-color: black;
   height:40px;
 }
+
 #main{
   display: grid;
-	min-width:700px ;
+  min-width:700px ;
   background-image: url('/css/images/DISZ.png'); 
   background-size: cover;
   z-index: -1; 
@@ -98,6 +100,7 @@ h1{
   background: #f00;
 	animation: akep 15s linear infinite reverse;
 }
+
 h3{
 	font-size: 20px;
 	color: black;  
