@@ -1,4 +1,4 @@
-var ir = 100;
+var ir = 50;
 var i = 0;
 var txt = "Kellemes Karácsonyi ünnepeket!";
 

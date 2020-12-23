@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	height: auto;
   background-color:lime; 
+  width: max-content;
 } 
 
 canvas{
@@ -18,7 +19,7 @@ canvas{
 
 #main{
   display: grid;
-  min-width:700px ;
+  /*min-width:700px ;*/
   background-image: url('/css/images/DISZ.png'); 
   background-size: cover;
   z-index: -1; 
@@ -28,7 +29,7 @@ canvas{
 
 #rowB{
 	display: grid;
-	min-width:700px ;
+	/*min-width:700px ;*/
 }
 
 
@@ -73,6 +74,11 @@ h1{
 #fa1-audio{
 	margin-left: 100px;
 	margin-bottom: 50px; 
+}
+#forgo-container {
+	display:block;	
+  width: 600px;
+	height: 600px;
 }
 
 #kep-container {
@@ -120,6 +126,31 @@ h3{
 
 @media(min-width: 700px){
 	.grid{
+		grid-template-columns: 650px 650px ; 
+    grid-gap: 40px;	
+    margin:0;
+  }
+
+  #main{
+    background-image: url('/css/images/DISZ.png'); 
+    background-size: cover;
+    background-position: center; 
+    z-index: -1; 
+    padding: 50px;
+    width: max-content;
+    
+  }
+	#img-kep33{
+		grid-template-columns: 400px 400px ; 
+		grid-gap: 40px;	
+  }
+  #forgo-conatiner{
+    padding-left:300px;
+  }
+  
+}
+@media(min-width: 1150px){
+	.grid{
 		grid-template-columns: 400px 650px 690px; 
     grid-gap: 40px;	
     margin:0;
@@ -137,7 +168,11 @@ h3{
 	#img-kep33{
 		grid-template-columns: 400px 400px ; 
 		grid-gap: 40px;	
-	}
+  }
+  #forgo-conatiner{
+    padding-left:0px;
+  }
+  
 }
 /*--------------------Template shine---------------------*/
 
@@ -233,3 +268,4 @@ h3{
     opacity: 0;
   } 
 }
+
