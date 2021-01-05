@@ -9,6 +9,7 @@
   "main": "indKarFa.js",
   "scripts": {
     "start": "node indKarFa.js",
+    "dev": "nodemon indKarFa.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -23,7 +24,7 @@
     "utf8": "^3.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.1"
+    "nodemon": "^2.0.6"
   },
   "optionalDependencies": {
     "utf-8-validate": "^5.0.2"
