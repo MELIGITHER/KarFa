@@ -9,7 +9,6 @@
   "main": "indKarFa.js",
   "scripts": {
     "start": "node indKarFa.js",
-    "dev": "nodemon indKarFa.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
