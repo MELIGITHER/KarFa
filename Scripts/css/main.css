@@ -23,22 +23,24 @@ html {
 
 .page-header {
   background-color: #087f5b;
+  min-width: 90vh;
   height: 7rem;
   padding-top: 1rem;
 }
 .footer {
   background-color: #087f5b;
+  min-width: 90vh;
+  height: 4rem;
   text-align: center;
   text-decoration-color: black;
-  height: 4rem;
   padding-top: 1rem;
 }
 
 .main {
   background-image: url("/css/images/DISZ.jpg");
   background-size: cover;
-  min-height: 89vh;
-  min-width: 95vh;
+  min-height: 90vh;
+  min-width: 90vh;
 }
 
 .grid {
