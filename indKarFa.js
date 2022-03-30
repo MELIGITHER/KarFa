@@ -8,7 +8,7 @@ var iso88592 = require('iso-8859-2');
 //__dirname : project folder.
 console.log(__dirname);
 //Store all JS and CSS in Scripts folder.In css/images- all images
-app.use(express.static(path.join(__dirname,'Script')));
+app.use(express.static(path.join(__dirname,'Scripts')));
 
 //Store all HTML files in Pages folder.
 app.use(express.static(path.join(__dirname,'Pages')));
