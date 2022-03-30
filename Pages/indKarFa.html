@@ -8,12 +8,14 @@
 
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
     <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="icon" href="/css/images/favicon.png" />
     <script src="/js/utf8.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="/js/FenyoFa2.js"></script>
     <script type="text/javascript">
       window.addEventListener("load", eventWindowLoaded, false);
+      window.addEventListener("orientationchange", eventWindowLoaded, false);
       function eventWindowLoaded() {
         run2();
       }
