@@ -38,6 +38,7 @@ html {
   background-image: url("/css/images/DISZ.jpg");
   background-size: cover;
   min-height: 89vh;
+  min-width: 95vh;
 }
 
 .grid {
