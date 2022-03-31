@@ -37,7 +37,7 @@ body {
 }
 
 .main {
-  background-image: url("/css/images/DISZ.jpg");
+  background-image: url("/Scripts/css/images/DISZ.jpg");
   background-size: cover;
   min-height: 89vh;
   min-width: 89vh;
