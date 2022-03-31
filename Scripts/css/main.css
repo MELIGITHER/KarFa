@@ -7,6 +7,11 @@
 html {
   font-size: 62.5%;
 }
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
 
 .container {
   /* 1140px */
@@ -14,11 +19,6 @@ html {
   max-width: 210rem;
   padding: 0 3.2rem;
   margin: 0 auto;
-}
-
-.center {
-  display: block;
-  margin: auto;
 }
 
 .page-header {
@@ -39,8 +39,8 @@ html {
 .main {
   background-image: url("/css/images/DISZ.jpg");
   background-size: cover;
-  min-height: 90vh;
-  min-width: 90vh;
+  min-height: 89vh;
+  min-width: 89vh;
 }
 
 .grid {
@@ -75,7 +75,14 @@ html {
   grid-template-columns: repeat(3, 1fr);
   margin-top: 5rem;
 }
-
+.fa1-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.fa1-title::first-letter {
+  text-transform: capitalize;
+  color: red;
+}
 .fa1-img {
   display: block;
   border-radius: 50%;
@@ -92,7 +99,7 @@ html {
   height: 45rem;
 }
 
-.img-kep3 {
+.fa2-img3 {
   border-radius: 50%;
   padding: 4rem;
   width: 20rem;
@@ -202,7 +209,7 @@ h3 {
     width: 30rem;
     height: 22.5rem;
   }
-  .img-kep3 {
+  .fa2-img3 {
     width: 15rem;
     height: 15rem;
     padding: 3rem;
@@ -216,8 +223,8 @@ h3 {
   .forgo-kozep {
     width: 15rem;
     height: 15rem;
-    left: 7rem;
-    top: 7rem;
+    left: 7.5rem;
+    top: 7.5rem;
   }
   .kep-container {
     width: 30rem;
